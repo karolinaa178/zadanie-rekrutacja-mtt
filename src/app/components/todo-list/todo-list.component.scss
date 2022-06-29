@@ -1,0 +1,32 @@
+.board {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.statuses {
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.list-wrapper {
+  display: inline-flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.todo-element-wrapper {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: fit-content;
+  min-height: 300px;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}

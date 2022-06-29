@@ -1,0 +1,8 @@
+<div class="dashboard-wrapper">
+  <div>Dashboard</div>
+</div>
+
+<div *ngFor="let instruction of displayedInstructions; let index = index" class="dashboard-list-element">
+  <div class="element-index">{{ index + 1 }}</div>
+  <div class="element-label">{{ instruction }}</div>
+</div>

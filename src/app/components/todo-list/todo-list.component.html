@@ -1,0 +1,14 @@
+<div class="board">
+    <div class="statuses" *ngFor="let status of statuses">
+        <p>You have {{status.occurrence}} tasks with status {{ status.status}}</p>
+    </div>
+
+    <div class="list-wrapper">
+        <div class="todo-element-wrapper" *ngFor="let element of elementLists, let i = index">
+            <h2 class="todo-title">{{element.title}}</h2>
+            <p class="todo-date">Data: {{element.due_on | date: 'dd/mm/yy'}}</p>
+            <p class="todo-status">Status: {{element.status}}</p>
+        </div>
+    </div>
+</div>
+
